@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />   </script>
+		<link rel="stylesheet" href="/style.css" />
+    <!--translate-->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+      function googleTranslateElementInit(){
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+    </script>
+		<title>Frozen</title>
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+crossorigin="anonymous">
+</head>
+  
+<body>
+	<header>
+  <div class="first-head">
+ 	<a href="#main-page" class="main-page-link"><h1>Frozen</h1></a>
+   <nav class="main-nav">
+     <a href="#about" class="join">About</a>
+     <a href="#achievements"> Achievements</a>
+     <a href="#references">References</a>
+     <a href="#contacts">Contacts</a>
+   </nav>       
+  </div>
+    
+  <!--hamburger-->
+  <div class="container">
+    <div class="pt-2 pb-2 border-bottom">
+      <a class="icon pl-2 pr-2 p-1 float-right" href="#hamburger-icon" onclick="gfgMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a class="pt-2 pb-2 text-success text-decoration-none font-weight-bold" href="#Home"> Frozen </a>
+    </div>
+    <div class="links nav flex-column d-none">
+      <a class="nav-link border-bottom" href="#about"class="join"> About</a>
+      <a class="nav-link border-bottom" href="#achievements"> Achievements </a>
+      <a class="nav-link border-bottom" href="#references"> References </a>
+      <a class="nav-link border-bottom" href="#contacts"> Contacts </a>
+    </div>
+  </div>
+  <!--Main body-->
+	</header>
+  
+	<section class="main-image" id="main-page">
+    <div class="padding">
+	    <div class="wrapper">
+        <div class="typing-demo">
+		      <h2 class="meet">Meet <span>Elsa</span></h2>
+        </div>
+       </div>
+    </div>
+  </section>
+  
+	<main>
+    <article class="why" id="about">
+      <div class="why-text">
+				<h2 class="animate-h2">Why Elsa is cool</h2> 
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.
+				</p>
+      </div>
+        <img src="./img/elsa.jfif" alt="picture of elsa standing in front of a nature background in an ice-blue dress">
+		</article>
+    
+    <article class="achievements" id="achievements">
+      <div class="acheivements-text">
+				<h2 class="animate-h2">Achievements</h2> 
+				<p>
+				  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <img src="./img/ice-palace.jfif" alt="A picture of Elsa's ice palace" class="ice-palace">
+    </article>
+    
+    <article class="references" id="references">
+      <div class="references-text">
+				<h2 class="animate-fade">References</h2>
+			  <div class="villains-wrapper">
+          <div class="villains-card animate-villains">
+            <p>Anna</p>
+            <img src="./img/anna.jfif" alt="Anna" class="villain-img" />  
+          </div>
+          <div class="villains-card animate-villains">
+           <p>Olaf</p>
+        <img src="./img/olaf.jfif" alt="Olaf" class="villain-img" />
+          </div>
+          <div class="villains-card animate-villains">
+           <p>Toby</p>
+           <a href="https://www.youtube.com/watch?v=fZmg2g_xSjk"><img src="./img/toby.jfif" alt="Toby Maguire" class="villain-img">           </a>
+         </div>
+        </div>
+      </div>
+    </article>
+	</main>
+  
+	<section class="join" id="contacts">
+    <a href="https://vs-elsa-save.katien2.repl.co/" class="E">
+      <div class="join-all">
+        <div class="join-text" style="color:white; text-decoration:none;">
+  			  <h2> Contact Me!</h2>
+  			  <p> (248) 434-5508 </p>
+        </div>
+    </a>
+      <div class="join-form">
+			<!--Action sends data to a server-->
+  			<form action="./second.html" method="get">
+  			  <input type="email" class="email-form" name="email" placeholder="Type email and hit enter" required>
+          <input class="email-submit" type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+	</section>
+  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+ <script>
+        function gfgMenu() {
+            const GFG = document.querySelector('.links');
+            if (GFG.classList.contains('d-none')) {
+                GFG.classList.remove('d-none');
+            }
+            else {
+                GFG.classList.add('d-none');
+            }
+        }
+ </script>
+ <script src="/script.js"></script>
+</body>
+</html>

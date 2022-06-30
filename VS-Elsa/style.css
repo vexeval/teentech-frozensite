@@ -1,0 +1,655 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+/*all*/
+html,
+body {
+	height: 100%;
+	width: 100%;
+
+}
+p {
+ font-size: 1.8rem;
+  padding: 1rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #dbeff3;
+}
+
+/* Some pretty solid header formatting below */
+
+header {
+	background-color: white;
+	padding: 1.2rem;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	justify-content: space-evenly;
+   align-items: center;
+  object-fit: center;
+}
+
+
+/*nav bar*/
+
+nav a {
+	text-decoration: none;
+	color: #93c5ff;
+	padding-left: 1rem;
+}
+nav a:hover {
+	text-decoration: none;
+	color: #0a7cff;
+}
+
+.container{
+  display: none;
+}
+
+/*General*/
+
+.why,
+.achievements,
+.join-all {
+	padding: 20vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.why h2,
+.achievements h2,
+.join-all h2,
+.references h2{
+	font-size: 7vh;
+}
+
+/*Main*/
+
+.main-image {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+		url(./img/elsa-in-frozen-2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 20rem; /* <- need help with this here */
+  padding-top: 12rem;
+  padding-bottom: 17rem;
+  height:100vh;
+  object-fit: contain;
+}
+
+
+.wrapper h2 {
+	font-size: clamp(3rem, 8vw, 7rem);
+	color: white;
+/* 	text-align: center; */
+}
+
+.wrapper{
+   padding-left: 4rem;
+}
+
+/*join*/
+
+.join-all,
+.join-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.join-text {
+	font-family: "Comic Neue", cursive;
+	text-align: center;
+}
+
+.join-form {
+	padding-top: 5vh;
+}
+
+.join-all {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+		url(/img/tob.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: 0;
+  background-position-y: 0;
+	height: 100vh;
+	padding: 20vh;
+	color: white;
+}
+
+.email-form {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+	height: 5rem;
+	width: 40vw;
+	color: white;
+}
+
+.email-submit {
+	background-color: #e7e7e7;
+	color: black;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+  border-radius: 10px;
+  margin: 1rem;
+}
+
+.join-form {
+	display: flex;
+	justify-content: center;
+}
+/*why and achievements*/
+
+.why,.achivements{
+  display: flex;
+  align-items: center;
+}
+
+/*Acheivements*/
+.achievements {
+	flex-direction: row-reverse;
+}
+
+/* References SECTION  */
+
+.references {
+	padding-top: 20vh;
+	padding-bottom: 15vw;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.references h2 {
+	text-align: center;
+}
+
+.villains {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.villains-text {
+	/* background: red; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	/* margin-top: 10rem; */
+	font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.villains-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.villains-card {
+	height: 350px;
+	width: 325px;
+	margin: 0 2rem;
+}
+
+.villain-img {
+	height: 100%;
+	width: 100%;
+	border-radius: 10px;
+  padding-bottom: 2rem;
+}
+
+.villains-card p {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: clamp(1rem, 5vw, 2rem);
+	font-weight: bold;
+}
+
+/*Animation*/
+
+.wrapper {
+	/*This part is important for centering*/
+	display: grid;
+	place-items: center;
+}
+
+.typing-demo {
+	width: 40ch;
+	animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+  font-family: monospace;
+	font-size: 2em;
+}
+
+.typing-demo h2 {
+	font-size: 4em;
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
+
+body header h1 {
+	color: #0a7cff;
+	text-decoration: none;
+}
+
+body header h1:hover {
+	color: #0a7cff;
+	text-decoration: none;
+}
+
+a.main-page-link {
+	text-decoration: none;
+  
+}
+
+.E {
+  text-decoration: none;
+  cursor: default;
+}
+
+.main-nav a {
+	color: #93c5ff;
+}
+
+.main-nav a:hover {
+	color: #0a7cff;
+}
+
+/* Media Query*/
+@media screen and  (max-width:1445px){
+/*card*/
+  .villains-card {
+    height: 320px;
+  	width: 285px;
+    margin: 0 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and  (max-width:1200px){
+  .achievement img, .why img{
+    height: 100%;
+    width: 50%;
+  }
+}
+
+@media screen and  (max-width:910px){
+
+  /*small*/
+.achievements h2,.why h2,.join-all h2, references h2 {
+  font-size: 0.7em;
+}
+  
+.why img, .achievements img{
+  width: 50%;
+  height: 50%;
+}
+
+.why, .achievements{
+    align-items: center;
+  }  
+}
+
+@media screen and  (max-width:950px){
+  
+  /* cards*/
+.villains-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+    
+ 
+  /*center*/
+.why,  .achievements, .join-all {
+  padding: 10vh;
+  display: flex;
+  justify-content: center;
+}
+  
+.why h2, .achievements h2, .join-all h2, .references h2{
+  font-size: 4.5vh;
+}
+  
+/*cover*/
+.typing-demo {
+  width: 19ch;
+  animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+  
+.typing-demo h2 {
+  font-size: 2em;
+}
+
+/*small*/
+.why-text, .achivements-text{
+    padding-left: 10px;
+  }
+}  
+
+@media screen and  (max-width:800px){
+.achievements{
+  width: 80%;
+  padding-left: 27rem;
+}
+  
+.achievements img{
+  width: 30vw;
+  height: 20vw;
+}
+  
+.join-all{
+  background-position-x: -55rem;
+  background:url(/img/tob.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20vh;
+  color: white;
+}
+  
+.main-image {
+  background: url(./img/elsa-in-frozen-2.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -7rem;
+  padding-top: 17rem;
+  width: 100vw;
+  height:50vh;
+  object-fit: contain;
+  }
+}
+
+@media screen and  (max-height:1180px){
+/*small*/
+.why , .achievements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.why-text, .acheivements-text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-image {
+  background: url(./img/elsa-in-frozen-2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: 0rem;
+  width: 100vw;
+  height:50vh;
+  object-fit: contain;
+}
+
+.padding{
+ padding: 7rem;
+}
+
+.wrapper{
+    padding-right: -4rem;
+ }
+}
+
+@media screen and  (max-width:600px){  
+/*small*/
+.why img, .achievements img{
+  width: 100%;
+  height:  100%;
+}
+  
+/*cover*/
+.typing-demo {
+  width: 16ch;
+  animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em; 
+  }
+
+.typing-demo h2 {
+  font-size: 1.7em;
+}
+
+.wrapper{
+  padding-right: 2rem;
+}
+
+.padding{
+  padding-top: 25vh;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  
+/*controls the hamburger menu*/
+.icon, h5 {
+  color: #0a7cff;
+}
+  
+.icon{
+  font-size: 2.5rem;
+}
+  
+.h5{
+    font-size:8rem;
+}
+  
+.links a:hover, .icon:hover {
+  background-color: #0a7cff;
+  color: white;
+  transition: 0.4s all linear;
+}
+  
+/*controls "Frozen"*/
+.pb-2{
+  font-size: 2rem;
+}
+  
+.container{
+  display:unset;
+}
+  
+.first-head{
+  display:none;
+}
+
+/*controls the size of the hamburger menu*/
+.pt-2{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+}
+   /*controls the size of the links*/
+.nav-link{
+  font-size:2rem;
+}
+
+  /* controls toby button */
+.email-form{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: center;
+  width: 40vh;
+}
+  
+.email-submit {
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+/*margin-left: 14vh; */
+  text-align: center;
+  text-decoration: none;
+  display: center;
+  font-size: 15px;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin: 1rem 1rem 1rem 14vh;
+  }
+}
+
+@media screen and (max-width:450px){
+
+.wrapper {
+  justify-content: left;
+/*   background-color: red; */
+  position: absolute;
+  right: 90px;
+}
+
+/*nav*/
+header {
+  display: flex;
+  align-items: center;
+  object-fit: none;
+}
+.typing-demo{
+  display: flex;
+  align-items: center;
+/*padding-bottom: 5rem; */
+}
+
+/*small*/
+.achievements{
+  width: 80%;
+  padding-left: 18rem;
+}
+  
+.why, .achievements,.join-all,.references {
+	padding-top: 26vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+  
+.why img, .achievements img{
+  width: 65vw;
+  height: 25vh;
+  padding: 2rem;
+}
+.why, .achievements{
+  font-size: 2em;
+  flex-wrap: wrap;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}  
+
+/*email*/
+.email-form{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: center;
+  width: 40vh;
+}
+  
+.email-submit {
+  background-color: #e7e7e7;
+  color: black;
+  border: none;
+  padding: 15px 32px;
+  /*margin-left: 14vh; */
+  text-align: center;
+  text-decoration: none;
+  display: center;
+  font-size: 15px;
+  justify-content: space-around;
+  margin: 1rem 1rem 1rem 14vh;
+}
+
+/*card*/
+.villains-card {
+  height: 325px;
+  width: 300px;
+  margin: 0 2rem;
+}
+  
+.main-image {
+	background: url(./img/elsa-in-frozen-2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-position-y: 50px;
+	background-position-x: -150px;
+  width: 100vw;
+  height:15vh;
+  object-fit: contain;
+}
+  
+.padding{
+ padding-top:5rem;
+}
+
+.wrapper{
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (max-width:414px){
+/*makes meet elsa look centered*/
+.wrapper{
+  padding-right: 0rem;
+}
+  
+.join-all {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),url(/img/tob.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: -600rem;
+  background-position-y: 0;
+	height: 100vh;
+	padding: 20vh;
+	color: white;
+}
+
+/*small*/
+.achievements{
+  width: 80%;
+  padding-left: 15rem;
+  }
+}
